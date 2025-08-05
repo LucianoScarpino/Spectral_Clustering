@@ -1,4 +1,4 @@
-Algebra Clustering — Spectral Clustering from Scratch
+Spectral Clustering from Scratch
 
 A hands-on implementation of spectral clustering built from first principles.
 This project constructs similarity graphs, Laplacian matrices, and computes eigenpairs using custom numerical methods (shifting and deflation). It then clusters the embedded data with K-Means and visualizes the results, side-by-side with baseline methods (plain K-Means, DBSCAN, and scikit-learn’s SpectralClustering).
