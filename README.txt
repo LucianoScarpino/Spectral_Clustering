@@ -1,14 +1,38 @@
-# Algebra_clustering
+Algebra Clustering — Spectral Clustering from Scratch
 
-Il codice è composto da 4 classi e un main. I dataset sono locati nella cartella "Datasets" e sono consultabili.
-Il main contiene una voce "dataset" in cui va inserito il nome del dataset come riportato nella cartella "Datasets". 
-Inoltre, sono presenti dei controlli: k per decidere l'intorno di esplorazione (10,20,40) mentre gli others sono 
-per mostrare graficamente gli altri metodi di clusters (settare su "False" se non si vogliono vedere).
+A hands-on implementation of spectral clustering built from first principles.
+This project constructs similarity graphs, Laplacian matrices, and computes eigenpairs using custom numerical methods (shifting and deflation). It then clusters the embedded data with K-Means and visualizes the results, side-by-side with baseline methods (plain K-Means, DBSCAN, and scikit-learn’s SpectralClustering).
 
-Il tasto interactive può essere settato su "True" cos' da poter inserire sul terminale i parametri richiesti, quindi:
-- scelta del metodo di calcolo degli eigenvalues tra shifting e deflation
-- scelta del metodo di calcolo degli eigenvectors tra shifting e deflation
-- scelta del numero di clusters
-- scelta del raggio eps per il DBscan
+Ideal for showcasing algorithmic skills (linear algebra, numerical methods) and practical ML engineering (pipelines, visualization).
 
-Se invece interactive è fissato a "False", verrà lanciato il codice del dataset indicato nella voce "dataset" in modalità default.
+Features
+	- From-scratch spectral pipeline
+	- Similarity graph via Gaussian (RBF) kernel with configurable σ.
+	- Degree and (normalized) Laplacian construction.
+	- Custom eigen-solvers:
+	- Shifting (inverse power with shift) for smallest eigenvalues/eigenvectors.
+	- Deflation strategy to extract successive eigenpairs.
+	- Clustering back-end
+	- Row-space embedding with the first M Laplacian eigenvectors (“rotation matrix U”), then K-Means in the embedded space.
+	- Comparisons included
+	- K-Means (original space)
+	- DBSCAN (with interactive ε helper)
+	- scikit-learn SpectralClustering for reference
+	- Interactive or batch mode
+	- Interactive prompts to pick eigenvalue/eigenvector methods, #clusters, and DBSCAN ε.
+	- Or run in default, fully reproducible mode.
+	- Clean visualizations
+	- Scatter plots of raw data vs. clustered assignments.
+	- Optional “k-th neighbor distance” plot to help choose DBSCAN ε.
+
+.
+├─ main.py                      # Entry point: selects dataset, toggles interactive & baselines
+├─ Laplacian.py                 # Similarity W, degree D, and Laplacian construction
+├─ EigenMethods.py              # Shifting + deflation eigen-solvers (inverse power + Householder-style steps)
+├─ SpectralClustering.py        # Eigenvector selection (U) and KMeans on embedding
+├─ Visualize.py                 # Orchestration, plotting, DBSCAN helpers, sklearn baselines
+├─ Datasets/
+│  ├─ Circle.csv                # 2D, unlabeled
+│  ├─ Spiral.csv                # 2D, third column contains labels
+│  └─ 3D_Dataset.csv            # 3D with header and label column
+└─ README.md
