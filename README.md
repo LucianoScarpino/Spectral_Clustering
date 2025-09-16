@@ -78,7 +78,7 @@ Flow:
 
 Reproducible (default) mode
 
-### Set ***interactive = False**:
+### Set ***interactive = False***:
 - The pipeline runs end-to-end without prompts.
 - The cluster count (M) is chosen by simple heuristics based on dataset and k.
 - Plots: Original Data → Eigenvalues → Projected Data → Clustered Data.
