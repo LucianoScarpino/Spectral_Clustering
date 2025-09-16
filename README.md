@@ -9,29 +9,6 @@ Ideal for showcasing algorithmic skills (linear algebra, numerical methods) and 
 
 ---
 
-## Contents
-
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Datasets](#datasets)
-- [Quick Start](#quick-start)
-- [Run Modes](#run-modes)
-  - [Interactive mode](#interactive-mode)
-  - [Reproducible (default) mode](#reproducible-default-mode)
-  - [Baselines](#baselines)
-- [Algorithm Details](#algorithm-details)
-  - [Graph, Laplacian, normalization](#graph-laplacian-normalization)
-  - [Eigenvalue / eigenvector solvers](#eigenvalue--eigenvector-solvers)
-  - [Embedding and clustering](#embedding-and-clustering)
-- [API (programmatic use)](#api-programmatic-use)
-- [Results and plots](#results-and-plots)
-- [Documentation](#documentation)
-- [Known limitations / TODO](#known-limitations--todo)
-- [References](#references)
-
----
-
 ## Features
 
 - k-NN similarity graph with Gaussian kernel \(RBF\) and σ configurable.
