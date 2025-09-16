@@ -8,24 +8,24 @@ Ideal for showcasing algorithmic skills (linear algebra, numerical methods) and 
 ---
 
 ## Features
-	- From-scratch spectral pipeline
-	- Similarity graph via Gaussian (RBF) kernel with configurable σ.
-	- Degree and (normalized) Laplacian construction.
-	- Custom eigen-solvers:
-	- Shifting (inverse power with shift) for smallest eigenvalues/eigenvectors.
-	- Deflation strategy to extract successive eigenpairs.
-	- Clustering back-end
-	- Row-space embedding with the first M Laplacian eigenvectors (“rotation matrix U”), then K-Means in the embedded space.
-	- Comparisons included
-	- K-Means (original space)
-	- DBSCAN (with interactive ε helper)
-	- scikit-learn SpectralClustering for reference
-	- Interactive or batch mode
-	- Interactive prompts to pick eigenvalue/eigenvector methods, #clusters, and DBSCAN ε.
-	- Or run in default, fully reproducible mode.
-	- Clean visualizations
-	- Scatter plots of raw data vs. clustered assignments.
-	- Optional “k-th neighbor distance” plot to help choose DBSCAN ε.
+- From-scratch spectral pipeline
+- Similarity graph via Gaussian (RBF) kernel with configurable σ.
+- Degree and (normalized) Laplacian construction.
+- Custom eigen-solvers:
+- Shifting (inverse power with shift) for smallest eigenvalues/eigenvectors.
+- Deflation strategy to extract successive eigenpairs.
+- Clustering back-end
+- Row-space embedding with the first M Laplacian eigenvectors (“rotation matrix U”), then K-Means in the embedded space.
+- Comparisons included
+- K-Means (original space)
+- DBSCAN (with interactive ε helper)
+- scikit-learn SpectralClustering for reference
+- Interactive or batch mode
+- Interactive prompts to pick eigenvalue/eigenvector methods, #clusters, and DBSCAN ε.
+- Or run in default, fully reproducible mode.
+- Clean visualizations
+- Scatter plots of raw data vs. clustered assignments.
+- Optional “k-th neighbor distance” plot to help choose DBSCAN ε.
 ---
 
 # Structure
