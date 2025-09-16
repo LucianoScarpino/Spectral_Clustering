@@ -1,11 +1,13 @@
-Spectral Clustering from Scratch
+# Spectral Clustering from Scratch
 
 A hands-on implementation of spectral clustering built from first principles.
 This project constructs similarity graphs, Laplacian matrices, and computes eigenpairs using custom numerical methods (shifting and deflation). It then clusters the embedded data with K-Means and visualizes the results, side-by-side with baseline methods (plain K-Means, DBSCAN, and scikit-learn’s SpectralClustering).
 
 Ideal for showcasing algorithmic skills (linear algebra, numerical methods) and practical ML engineering (pipelines, visualization).
 
-Features
+---
+
+## Features
 	- From-scratch spectral pipeline
 	- Similarity graph via Gaussian (RBF) kernel with configurable σ.
 	- Degree and (normalized) Laplacian construction.
@@ -24,7 +26,11 @@ Features
 	- Clean visualizations
 	- Scatter plots of raw data vs. clustered assignments.
 	- Optional “k-th neighbor distance” plot to help choose DBSCAN ε.
+---
 
+# Structure
+
+```
 .
 ├─ main.py                      # Entry point: selects dataset, toggles interactive & baselines
 ├─ Laplacian.py                 # Similarity W, degree D, and Laplacian construction
@@ -36,3 +42,5 @@ Features
 │  ├─ Spiral.csv                # 2D, third column contains labels
 │  └─ 3D_Dataset.csv            # 3D with header and label column
 └─ README.md
+
+```
