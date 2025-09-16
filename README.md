@@ -34,15 +34,22 @@ Ideal for showcasing algorithmic skills (linear algebra, numerical methods) and 
 
 ```
 .
-├─ main.py                      # Entry point: selects dataset, toggles interactive & baselines
-├─ Laplacian.py                 # Similarity W, degree D, and Laplacian construction
-├─ EigenMethods.py              # Shifting + deflation eigen-solvers (inverse power + Householder-style steps)
-├─ SpectralClustering.py        # Eigenvector selection (U) and KMeans on embedding
-├─ Visualize.py                 # Orchestration, plotting, DBSCAN helpers, sklearn baselines
-├─ Datasets/
-│  ├─ Circle.csv                # 2D, unlabeled
-│  ├─ Spiral.csv                # 2D, third column contains labels
-│  └─ 3D_Dataset.csv            # 3D with header and label column
-└─ README.md
+├── main.py                    # Entry point: selects dataset, toggles interactive & baselines
+├── Laplacian.py               # Similarity W, degree D, and Laplacian construction
+├── EigenMethods.py            # Shifting + deflation eigen-solvers (inverse power + Householder)
+├── SpectralClustering.py      # Eigenvector selection (U) and KMeans on embedding
+├── Visualize.py               # Orchestration, plotting, DBSCAN helpers, sklearn baselines
+├── Datasets/
+│   ├── Circle.csv             # 2D, unlabeled
+│   ├── Spiral.csv             # 2D, third column contains labels
+│   └── 3D_Dataset.csv         # 3D with header and label column
+├── Spectral_Clustering.pdf    # Project report / paper
+└── README.md
 
 ```
+
+---
+
+## Documentation
+
+- [Spectral_Clustering.pdf](Spectral_Clustering.pdf) — Project report with theory, implementation, and results.
