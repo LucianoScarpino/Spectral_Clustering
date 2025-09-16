@@ -1,4 +1,4 @@
-# Spectral Clustering from Scratch
+# Spectral Clustering
 
 ## Overview
 
